@@ -46,6 +46,7 @@
       <HintPath>..\packages\FeatureToggle.WPFExtensions.2.2.1\lib\net40\FeatureToggle.WpfExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +66,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Toggle\CustomSQLToggle.cs" />
+    <Compile Include="Toggle\CustomSQLToggleProvider.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

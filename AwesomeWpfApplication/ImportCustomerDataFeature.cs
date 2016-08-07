@@ -1,9 +1,10 @@
-﻿using FeatureToggle.Core;
+﻿using AwesomeWpfApplication.Toggle;
+using FeatureToggle.Core;
 using FeatureToggle.Toggles;
 
 namespace AwesomeWpfApplication
 {
-    internal class ImportCustomerDataFeature : HttpJsonFeatureToggle
+    internal class ImportCustomerDataFeature : CustomSQLToggle
     {
     }
 }
