@@ -3,7 +3,7 @@ using FeatureToggle.Toggles;
 
 namespace AwesomeWpfApplication
 {
-    internal class ImportCustomerDataFeature : SqlFeatureToggle
+    internal class ImportCustomerDataFeature : HttpJsonFeatureToggle
     {
     }
 }
