@@ -1,0 +1,17 @@
+﻿<Window x:Class="AwesomeWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:toggles="clr-namespace:FeatureToggle.Toggles;assembly=FeatureToggle.WpfExtensions"
+        Title="Awesome WPF Application" Height="350" Width="525">
+    <Window.Resources>
+        <toggles:FeatureToggleToVisibilityConverter x:Key="Converter"></toggles:FeatureToggleToVisibilityConverter>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Button>Open</Button>
+            <Button>Save</Button>
+            <Button>Print</Button>
+            <Button Visibility="{Binding ImportCustomerDataFeature, Converter={StaticResource Converter}}">Import Customer Data</Button>
+        </StackPanel>
+    </Grid>
+</Window>
