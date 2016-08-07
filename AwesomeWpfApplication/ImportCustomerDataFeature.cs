@@ -4,7 +4,7 @@ using FeatureToggle.Toggles;
 
 namespace AwesomeWpfApplication
 {
-    internal class ImportCustomerDataFeature : CustomSQLToggle
+    internal class ImportCustomerDataFeature : AlwaysOffFeatureToggle
     {
     }
 }
